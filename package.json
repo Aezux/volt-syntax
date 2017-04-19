@@ -1,0 +1,12 @@
+{
+  "name": "volt-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A theme inspired by lightning and stormy weather.",
+  "keywords": ["volt", "syntax", "theme"],
+  "repository": "https://github.com/Aezux/volt-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
