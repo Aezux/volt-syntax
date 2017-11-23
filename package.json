@@ -1,7 +1,7 @@
 {
   "name": "volt-atom-syntax",
   "theme": "syntax",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "description": "A theme inspired by lightning and stormy weather.",
   "keywords": [
     "volt",
