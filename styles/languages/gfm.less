@@ -1,0 +1,30 @@
+.syntax--gfm {
+  .uno-1();
+  .punctuation-mixin();
+
+  &.syntax--markup,
+  & .syntax--link {
+    .uno-2();
+  }
+  &.syntax--markup.syntax--raw,
+  &.syntax--markup .syntax--support {
+    .duo-3();
+  }
+
+  &.syntax--variable,
+  &.syntax--entity {
+    .duo-1();
+  }
+  &.syntax--support  { .duo-2(); }
+  &.syntax--comment  { .duo-3(); }
+
+  &.syntax--heading-1 { .duo-1(); }
+  &.syntax--heading-2 { .duo-2(); }
+  &.syntax--heading-3 { .uno-4(); }
+  &.syntax--heading-4 { .uno-3(); }
+  &.syntax--heading-5 { .uno-2(); }
+  &.syntax--heading-6 { .uno-1(); }
+
+  &.syntax--bold   { .syntax--bold(); }
+  &.syntax--italic { .syntax--italic(); }
+}

@@ -1,0 +1,67 @@
+.uno-1 { color: @uno-1; }
+.uno-2 { color: @uno-2; }
+.uno-3 { color: @uno-3; }
+.uno-4 { color: @uno-4; }
+
+.duo-1 { color: @duo-1; }
+.duo-2 { color: @duo-2; }
+.duo-3 { color: @duo-3; }
+
+.punctuation-mixin(@color:@duo-3) {
+  .syntax--punctuation,
+  .syntax--bracket,
+  .syntax--brace {
+    color: @color;
+  }
+  .syntax--string .syntax--punctuation {
+    color: fade(@syntax-string, 40%);
+  }
+}
+
+.syntax--meta {
+  .uno-2();
+}
+
+.syntax--html.syntax--elements,
+.syntax--entity,
+.syntax--tag {
+    .uno-1();
+}
+
+.syntax--function-call {
+  .uno-3();
+}
+
+.syntax--variable,
+.syntax--character.syntax--escape,
+.syntax--html.syntax--attribute-name,
+.syntax--css.syntax--pseudo-element {
+  .uno-2();
+}
+
+.syntax--support {
+  .uno-3();
+}
+
+.syntax--constant,
+.syntax--storage.syntax--type {
+  .duo-1();
+}
+
+.syntax--keyword,
+.syntax--storage {
+  .duo-2();
+}
+
+.syntax--string {
+  color: @syntax-string;
+}
+
+.syntax--comment {
+  color: @syntax-comment;
+}
+
+.punctuation-mixin();
+
+.syntax--bold { font-weight: bold; }
+.syntax--italic { font-style: italic; }
