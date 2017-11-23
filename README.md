@@ -1,6 +1,5 @@
 # volt-syntax theme
 A theme inspired by lightning and stormy weather.
-
 A syntax theme based on @simurai's [Duotone Dark Syntax](https://github.com/simurai/duotone-dark-syntax).
 
 | language        | example       |
